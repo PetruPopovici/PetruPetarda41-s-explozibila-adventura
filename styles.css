@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #ffe07a, #f25d0f 60%, #9c1d00 100%);
+  color: #2b0400;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+}
+
+header p {
+  margin: 0 auto;
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+canvas {
+  width: 100%;
+  border: 6px solid #341200;
+  border-radius: 20px;
+  background: #c6f2ff;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+.info-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 14px 16px;
+  border: 2px solid #5f2c00;
+}
+
+.stat span {
+  display: block;
+  font-size: 0.95rem;
+  color: #5a2b00;
+}
+
+.stat strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.6rem;
+}
+
+.log {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 16px;
+  border: 2px solid #5f2c00;
+  min-height: 140px;
+}
+
+.log h2 {
+  margin-top: 0;
+}
+
+#messages {
+  max-height: 200px;
+  overflow-y: auto;
+  color: #2b0400;
+}
+
+#messages p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 850px) {
+  .game-area {
+    grid-template-columns: 1fr;
+  }
+}

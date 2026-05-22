@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petru Petarda Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Petru Petarda: Save Big Yahu</h1>
+      <p>Move with WASD or arrow keys, press <strong>Space</strong> or <strong>Enter</strong> to explode enemies, and reach Fort Knox to free Big Yahu.</p>
+    </header>
+
+    <section class="game-area">
+      <canvas id="gameCanvas" width="640" height="480"></canvas>
+      <div class="info-panel">
+        <div class="stat">
+          <span>Health</span>
+          <strong id="health">100</strong>
+        </div>
+        <div class="stat">
+          <span>Explosions</span>
+          <strong id="explosions">0</strong>
+        </div>
+        <div class="stat">
+          <span>Enemies left</span>
+          <strong id="enemies">0</strong>
+        </div>
+        <div class="stat">
+          <span>Objective</span>
+          <strong id="objective">Find Fort Knox</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="log">
+      <h2>Mission Log</h2>
+      <div id="messages"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
